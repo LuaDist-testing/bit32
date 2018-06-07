@@ -2,11 +2,11 @@
 
 package = "bit32"
 
-version = "5.2.1.52-1"
+version = "5.2.2-1"
 
 -- LuaDist source
 source = {
-  tag = "5.2.1.52-1",
+  tag = "5.2.2-1",
   url = "git://github.com/LuaDist-testing/bit32.git"
 }
 -- Original source
@@ -17,19 +17,20 @@ source = {
 description = {
    summary = "Lua 5.2 bit manipulation library",
    detailed = [[
-      This is a dummy rockspec to avoid dependency problems.
-      This will not be necessary in future versions of LuaRocks.
+      bit32 is the native Lua 5.2 bit manipulation library,
+      backported to Lua 5.1
    ]],
    license = "MIT/X11",
    homepage = "http://lua.org/work/",
 }
 
 dependencies = {
-   "lua ~> 5.2"
+   "lua >= 5.1, < 5.2"
 }
 
 build = {
    type = "builtin",
    modules = {
+      bit32 = "lbitlib.c",
    }
 }
