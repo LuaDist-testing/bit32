@@ -1,18 +1,10 @@
--- This file was automatically generated for the LuaDist project.
-
 package = "bit32"
 
 version = "5.2.2-1"
 
--- LuaDist source
 source = {
-  tag = "5.2.2-1",
-  url = "git://github.com/LuaDist-testing/bit32.git"
+   url = "https://raw.github.com/hishamhm/lua-compat-5.2/bitlib-5.2.2/lbitlib.c",
 }
--- Original source
--- source = {
---    url = "https://raw.github.com/hishamhm/lua-compat-5.2/bitlib-5.2.2/lbitlib.c",
--- }
 
 description = {
    summary = "Lua 5.2 bit manipulation library",
